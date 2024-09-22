@@ -15,12 +15,11 @@ namespace FaceQuickstart
         static string personGroupId = Guid.NewGuid().ToString();
 
         // URL path for the images.
-        const string IMAGE_BASE_URL = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-sample-data-files/master/Face/images/";
-        const string imageOnFileUrl = "https://navkrishtempstorage.blob.core.windows.net/test/Naveen-DL.jpeg";
-        const string imageToVerify = "https://navkrishtempstorage.blob.core.windows.net/test/Untitled.png";
+        const string imageOnFileUrl = "https://<storage-account-name>.blob.core.windows.net/<container name>/<your-dl>";
+        const string imageToVerify = "https://<storage-account-name>.blob.core.windows.net/<container name>/<dl photo>";
         // From your Face subscription in the Azure portal, get your subscription key and endpoint.
-        const string SUBSCRIPTION_KEY = "b9d6aec825cb427abe8e67a3c053b07f";
-        const string ENDPOINT = "https://navkrish-facerecog.cognitiveservices.azure.com/";
+        const string SUBSCRIPTION_KEY = "<your-face-api-key>";
+        const string ENDPOINT = "https://<face-recog-endpoint>.cognitiveservices.azure.com/";
 
 
         static void Main(string[] args)
